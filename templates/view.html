@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block article_view %}
+
+<div class="banner-image" style="background-image:url({{article.header_img.url}});"></div>
+
+<div class="py-5 bg-light">
+    <div class="container">
+        <h1 class="display-3 font-weight-bold">{{article.title}}</h1>
+        <h3 class="font-weight-lighter">{{article.sub_title}}</h2>
+        <p id="a01">{{article.body}}</p>
+        <p class="timestamp font-weight-lighter">{{article.timestamp}}</p>
+    </div>
+</div>
+
+{% endblock %}
